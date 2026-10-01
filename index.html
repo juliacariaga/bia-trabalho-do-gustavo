@@ -1,0 +1,293 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Battle Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game">
+
+      
+
+        <header>
+            <h1>⚔️ BATTLE TIC-TAC-TOE</h1>
+
+            <p class="subtitle">
+                O jogo da velha virou uma batalha!
+            </p>
+        </header>
+
+
+     
+        <section class="topbar">
+
+            <div class="info">
+                <span>NÍVEL</span>
+
+                <strong id="level">
+                    1
+                </strong>
+
+                <div class="level-bar">
+                    <div
+                        class="level-progress"
+                        id="progress">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="info">
+                <span>VITÓRIAS</span>
+
+                <strong id="wins">
+                    0
+                </strong>
+            </div>
+
+
+            <div class="info">
+                <span>DERROTAS</span>
+
+                <strong id="losses">
+                    0
+                </strong>
+            </div>
+
+        </section>
+
+
+        
+        <section class="characters">
+
+            <div class="character player">
+
+                <div
+                    class="avatar"
+                    id="playerAvatar">
+                    🥷
+                </div>
+
+                <div class="name">
+                    VOCÊ
+                </div>
+
+                <div class="hp">
+                    ⚡ Energia: 100%
+                </div>
+
+            </div>
+
+
+            <div class="vs">
+                VS
+            </div>
+
+
+            <div class="character enemy">
+
+                <div
+                    class="avatar"
+                    id="enemyAvatar">
+                    🤖
+                </div>
+
+                <div
+                    class="name"
+                    id="enemyName">
+                    ROBÔ INICIANTE
+                </div>
+
+                <div class="hp">
+                    🔥 Dificuldade:
+                    <span id="difficulty">
+                        Fácil
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+       
+
+        <div
+            class="status"
+            id="status">
+
+            Sua vez! Ataque o inimigo!
+
+        </div>
+
+ 
+        
+
+        <section
+            class="board"
+            id="board">
+
+           
+            <button
+                class="cell"
+                data-index="0">
+            </button>
+
+            <button
+                class="cell"
+                data-index="1">
+            </button>
+
+            <button
+                class="cell"
+                data-index="2">
+            </button>
+
+ 
+
+            <button
+                class="cell"
+                data-index="3">
+            </button>
+
+            <button
+                class="cell"
+                data-index="4">
+            </button>
+
+            <button
+                class="cell"
+                data-index="5">
+            </button>
+
+
+            
+
+            <button
+                class="cell"
+                data-index="6">
+            </button>
+
+            <button
+                class="cell"
+                data-index="7">
+            </button>
+
+            <button
+                class="cell"
+                data-index="8">
+            </button>
+
+        </section>
+
+
+       
+        <div class="buttons">
+
+            <button
+                class="action"
+                id="newGameButton">
+
+                🔄 Nova batalha
+
+            </button>
+
+
+            <button
+                class="action secondary"
+                id="resetButton">
+
+                🗑️ Resetar progresso
+
+            </button>
+
+        </div>
+
+
+       
+
+        <section class="skin-panel">
+
+            <label for="skin">
+                Escolha seu personagem:
+            </label>
+
+
+            <select id="skin">
+
+                <option value="🥷">
+                    🥷 Ninja
+                </option>
+
+                <option value="🧙">
+                    🧙 Mago
+                </option>
+
+                <option value="🤠">
+                    🤠 Cowboy
+                </option>
+
+                <option value="🧛">
+                    🧛 Vampiro
+                </option>
+
+                <option value="👽">
+                    👽 Alien
+                </option>
+
+                <option value="🤖">
+                    🤖 Robô
+                </option>
+
+                <option value="🥷🏻">
+                    🥷🏻 Ninja Dourado
+                </option>
+
+            </select>
+
+        </section>
+
+    </main>
+
+ 
+
+    <div
+        class="message"
+        id="message">
+
+        <div class="message-box">
+
+            <h2 id="messageTitle">
+                VITÓRIA!
+            </h2>
+
+            <p id="messageText">
+            </p>
+
+            <button
+                class="action"
+                id="continueButton">
+
+                ⚔️ Continuar
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+  
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
